@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homepage | Hotel Management System</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="css/index.css" />
+
+  <!-- JS -->
+  <script src="js/bootstrap.js" defer></script>
+  <script src="js/sweetalert.js" defer></script>
+  <script src="js/index.js" defer></script>
+</head>
+<body style="background-color: #f5f8fa;">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md shadow-lg fixed-top navbar-light">
+    <div class="container-fluid">
+      <img src="img/logo.jpg" class="rounded-circle" width="60" alt="Logo" />
+      <a href="#" class="mx-4 text-white navbar-brand">HMS</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="myMenu">
+        <ul class="navbar-nav w-100 justify-content-end">
+          <li class="nav-item fw-bold text-white mt-2">
+            The Prakriti Palace
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mt-5 pt-5">
+    <div class="row align-items-center">
+
+      <!-- Form Section -->
+      <div class="col-md-6">
+        <!-- Nav Tabs -->
+        <ul class="nav nav-tabs mb-3">
+          <li class="nav-item">
+            <a href="#signup" class="nav-link active" data-bs-toggle="tab">Signup</a>
+          </li>
+          <li class="nav-item">
+            <a href="#login" class="nav-link" data-bs-toggle="tab">Login</a>
+          </li>
+        </ul>
+
+        <!-- Tab Panes -->
+        <div class="tab-content">
+
+          <!-- Signup Form -->
+          <div class="tab-pane fade show active container" id="signup">
+            <div class="p-4 bg-white rounded shadow">
+              <div class="text-center mb-3">
+                <img src="img/signup.jpeg" class="w-25 rounded" alt="Signup" />
+              </div>
+              <form>
+                <input type="text" placeholder="Fullname" class="mb-3 form-control" />
+                <input type="text" placeholder="Hotel Name" class="mb-3 form-control" />
+                <input type="number" placeholder="No. Of Rooms" class="mb-3 form-control" />
+                <input type="number" placeholder="Phone Number" class="mb-3 form-control" />
+                <input type="email" placeholder="E-Mail" class="mb-3 form-control" />
+                <input type="password" placeholder="Password" class="mb-3 form-control" />
+                <button class="btn w-100">Register</button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Login Form -->
+          <div class="tab-pane fade container" id="login">
+            <div class="p-4 bg-white rounded shadow">
+              <div class="text-center mb-3">
+                <img src="img/login.jpeg" class="w-25 rounded" alt="Login" />
+              </div>
+              <form>
+                <input type="email" placeholder="E-Mail" class="mb-3 form-control" />
+                <input type="password" placeholder="Password" class="mb-3 form-control" />
+                <button class="btn w-100">Login</button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Image Section -->
+      <div class="col-md-6 mt-4 mt-md-0 text-center">
+        <img src="img/hotel1.jpg" class="w-100 rounded shadow" alt="Hotel" />
+      </div>
+    </div>
+  </div>
+  <script src = "js/index.js"></script>
+
+  <!--SweetAlert-->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
